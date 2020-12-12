@@ -13,7 +13,7 @@
     		flex-direction: column;
 		text-align: center;
 	}
-	//header and footer are sticky, will not move on scroll.
+	/*header and footer are sticky, will not move on scroll.*/
 	header, footer {
 		width: 100vw;
    		max-height: 30vh;
@@ -22,7 +22,7 @@
 		border-size: 5px;
 		border-color: #403C70;
 	}
-	//main will scroll independent of header and footer
+	/*main will scroll independent of header and footer*/
 	main {
     		width: 100vw;
     		max-height: 70vh;
@@ -49,7 +49,7 @@
   	article {
     		width: auto;
   	}
-	//links will appear as black text for each pseudoclass, only changing on rollover to include drop shadow
+	/*links will appear as black text for each pseudoclass, only changing on rollover to include drop shadow*/
 	a:link {
 		color: black;
 		text-decoration: none;
@@ -76,7 +76,7 @@
 		font-size: 12px;
 		padding: 10px;
 	}
-	//list elements include block display to appear left aligned at at center
+	/*list elements include block display to appear left aligned at at center*/
  	ul {
    		display: inline-block;
    		list-style-position: inside;
