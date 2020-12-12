@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+	* {
+		box-sizing: border-box;
+	}
+  
+	body {
+    		max-height: 100vh;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 400;
+		color: #777777;
+   		display: flex;
+    		flex-direction: column;
+		text-align: center;
+	}
+	
+	header, footer {
+		width: 100vw;
+   		max-height: 30vh;
+		background-color: #483C32;
+    		border-style: solid;
+		border-size: 5px;
+		border-color: #403C70;
+	}
+	
+	main {
+    		width: 100vw;
+    		max-height: 70vh;
+		background-color: #003155;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		text-align: center;
+    		overflow: auto;
+	}
+	
+	h1 {
+		font-size: 40px;
+	}
+	
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+  	article {
+    		width: auto;
+  	}
+	
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: black;
+		text-shadow: 2px 2px #333333;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: black;
+		text-decoration: none;
+	}	
+
+	p {
+    		text-align: center;
+		font-size: 12px;
+		padding: 10px;
+	}
+
+ 	ul {
+   		display: inline-block;
+   		list-style-position: inside;
+ 	}
+
+  	ol {
+    		display: inline-block;
+    		list-style-position: inside;
+  	}
+
+  	.lists {
+   		align-self: center;
+  	}
+
+  	.maintext {
+    		width: 60%;
+  	}
+
+  	li {
+    		text-align: left;
+  	}
+
+	.photo {
+    		max-width: 400px;
+    		max-height: 70vh;
+	}
+	
+	img {
+    		max-width: 400px;
+    		max-height: 70vh;
+	}
+
