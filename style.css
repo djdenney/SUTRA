@@ -13,6 +13,7 @@
     		flex-direction: column;
 		text-align: center;
 	}
+
 	/*header and footer are sticky, will not move on scroll.*/
 	header, footer {
 		width: 100vw;
@@ -22,6 +23,7 @@
 		border-size: 5px;
 		border-color: #403C70;
 	}
+
 	/*main will scroll independent of header and footer*/
 	main {
     		width: 100vw;
@@ -48,7 +50,9 @@
 
   	article {
     		width: auto;
+		margin: 10px;
   	}
+
 	/*links will appear as black text for each pseudoclass, only changing on rollover to include drop shadow*/
 	a:link {
 		color: black;
@@ -76,6 +80,7 @@
 		font-size: 12px;
 		padding: 10px;
 	}
+
 	/*list elements include block display to appear left aligned at at center*/
  	ul {
    		display: inline-block;
@@ -108,15 +113,3 @@
     		max-width: 400px;
     		max-height: 70vh;
 	}
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
