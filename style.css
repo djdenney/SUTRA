@@ -16,7 +16,7 @@
 	/*header and footer are sticky, will not move on scroll.*/
 	header, footer {
 		width: 100vw;
-   		max-height: 30vh;
+   		max-height: 50vh;
 		background-color: #483C32;
     		border-style: solid;
 		border-size: 5px;
