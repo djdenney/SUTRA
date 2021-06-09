@@ -1,115 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-	* {
-		box-sizing: border-box;
-	}
+* {
+    box-sizing: border-box;
+}
 
-	body {
-    		max-height: 100vh;
-		font-family: 'Roboto Mono', monospace;
-		font-weight: 400;
-		color: #E6E6E6;
-   		display: flex;
-    		flex-direction: column;
-		text-align: center;
-	}
+body {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
 
-	/*header and footer are sticky, will not move on scroll.*/
-	header, footer {
-		width: 100vw;
-   		max-height: 50vh;
-		background-color: #483C32;
-    		border-style: solid;
-		border-size: 5px;
-		border-color: #403C70;
-	}
+header,
+footer {
+    width: 100vw;
+    height: 25vh;
+    min-height: 100px;
+    background-color: #483c32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-	/*main will scroll independent of header and footer*/
-	main {
-    		width: 100vw;
-    		min-height: 70vh;
-		background-color: #294147;
-    		display: flex;
-    		flex-direction: column;
-    		align-items: center;
-    		text-align: center;
-    		overflow: auto;
-	}
-	
-	h1 {
-		font-size: 40px;
-	}
-	
-	h2 {
-		font-size: 30px;
-	}
+main {
+    width: 100vw;
+    height: 50vh;
+    min-height: 200px;
+    background-color: #294147;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
 
-	h3 {
-		font-size: 20px;
-	}
+h1 {
+    font-size: 40px;
+}
 
-  	section {
-    		width: auto;
-		margin: 10px;
-  	}
+form {
+    margin: 10px;
+}
 
-	/*links will appear as black text for each pseudoclass, only changing on rollover to include drop shadow*/
-	a:link {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
+input {
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-	a:visited {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
-	
-	a:hover {
-		color: #FFFFFF;
-		text-shadow: 2px 2px #333333;
-		text-decoration: none;
-	}
+button {
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-	a:active {
-		color: #FFFFFF;
-		text-decoration: none;
-	}	
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-	p {
-    		text-align: center;
-		font-size: 12px;
-		padding: 10px;
-	}
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-	/*list elements include block display to appear left aligned at at center*/
- 	ul {
-   		display: inline-block;
-   		list-style-position: inside;
- 	}
+a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px #333333;
+    text-decoration: none;
+}
 
-  	ol {
-    		display: inline-block;
-    		list-style-position: inside;
-  	}
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-  	.lists {
-   		align-self: center;
-  	}
-
-  	.maintext {
-    		width: 60%;
-  	}
-
-  	li {
-    		text-align: left;
-  	}
-
-	.photo {
-    		max-width: 400px;
-    		max-height: 70vh;
-	}
-	
-	img {
-    		max-width: 400px;
-    		max-height: 70vh;
-	}
+p {
+    font-size: 12px;
+}

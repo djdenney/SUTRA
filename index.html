@@ -1,116 +1,72 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width">
-			<title>Daniel Denney's Portfolio</title>
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-			<link href="style.css" rel="stylesheet" type="text/css" />
-		</head>
-		<body>
-			<header>
-				<!--Header and footer elements are sticky-->
-				<h1>
-					Daniel Denney
-				</h1>
-				<nav>
-					<a href="#intro">
-						Intro
-					</a>
-					<a href="#about">
-						About
-					</a>
-					<a href="#contact">
-						Contact
-					</a>
-				</nav>		
-			</header>
-			<!--Main element will scroll behind header and footer-->
-			<main>
-				<div class="photo">
-					<img src="face.jpg" alt="Daniel Denney">
-				</div>
-       				<div class="maintext">
-					<section id="intro">
-						<h2>
-							Introduction
-						</h2>
-						<h3>
-							Who I am
-						</h3>
-						<p>
-							I am a Student at Thinkful, pursuing a career in Software Development.
-						</p>
-
-						<h3>
-							Where I am
-						</h3>
-						<p>
-							I am located in Phoenix Arizona, or anywhere with an internet connection.
-						</p>
-					</section>
-				<hr>
-				<section id="about">
-					<h2>
-						About Me
-					</h2>
-					<p>
-						I am interested in joining a team that builds web applications designed to replace traditional desktop software for niche use.
-					</p>
-					<p>
-						When I am not learning internet magic, I am either creating music under the pseudonym <a href="https://open.spotify.com/artist/2DOcaQIs8VjxFfLBrtYJbv?si=Q5EzBzp4SbyuFzwISfb2Fw">Eugie Saguaro</a> or spending what quality time I can with my family.
-					</p>
-				</section>
-				<hr>
-				<section id="contact">
-					<h2>
-						Contact Me
-					</h2>
-					<div class="lists">
-						<ol>
-							<li>
-		<!--I'm not on linkedin, this will act as a placeholder until I have set up a linkedin profile-->
-								<a href="https://www.linkedin.com">
-									LinkedIn
-								</a>
-							</li>
-							<li>
-								<a href="https://www.github.com/djdenney">
-									GitHub
-								</a>
-							</li>
-							<li>
-								<a href="mailto:danieljosephdenney@gmail.com">
-									Gmail
-								</a>
-							</li>
-						</ol>
-					</div>
-				</section>
-        </div>
-			</main>
-			<!--Header and footer elements are sticky-->
-			<footer>
-        			<div class="lists">
-					<ul>
-						<li>
-							<a href="#intro">
-								Return to Intro
-							</a>
-						</li>
-						<li>
-							<a href="#about">
-								Return to About
-							</a>
-						</li>
-						<li>
-							<a href="#contact">
-								Return to Contact
-							</a>
-						</li>
-					</ul>
-        			</div>
-			</footer>
-			<script src="script.js"></script>
-		</body>
-	</html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Super Useful Text Reversal App</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>SUPER USEFUL TEXT REVERSAL APP</h1>
+        </header>
+        <main>
+            <p>Enter text into input field and click "Reverse" button.</p>
+            <form>
+                <input
+                    id="input"
+                    name="input"
+                    type="text"
+                    placeholder="input"
+                    required="true"
+                    value=""
+                />
+                <br />
+                <button id="button" type="submit">Reverse</button>
+                <br />
+                <input
+                    id="output"
+                    name="output"
+                    type="text"
+                    readonly="true"
+                    placeholder="output"
+                />
+            </form>
+        </main>
+        <footer>
+            <p>
+                For other SUPER USEFUL apps:
+                <a href="https://github.com/djdenney" target="_blank">Github</a>
+            </p>
+        </footer>
+        <script>
+            const input = document.querySelector("#input");
+            const button = document.querySelector("#button");
+            const output = document.querySelector("#output");
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                if (input.value.length < 2) {
+                    return alert(
+                        "input must contain a minimum of 2 characters"
+                    );
+                }
+                if (input.value.length > 50) {
+                    return alert(
+                        "input can only contain a maximum of 50 characters"
+                    );
+                }
+                const split = input.value.split("");
+                console.log(split);
+                const reverse = split.reverse();
+                const reversedString = reverse.join("");
+                output.value = reversedString;
+                console.log(reversedString);
+            });
+        </script>
+    </body>
+</html>
